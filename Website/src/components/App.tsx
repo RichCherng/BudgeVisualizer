@@ -1,12 +1,13 @@
-import React from 'react';
+// App.tsx
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./AppRoutes";
 
 const App: React.FC = () => {
-    return (
-        <div>
-            <h1>Welcome to My React Website</h1>
-            <p>This is a simple React application set up with TypeScript.</p>
-        </div>
-    );
+  return (
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
+  );
 };
 
 export default App;
